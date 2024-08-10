@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./static/img/altlogo.ico" />
+    <link rel="stylesheet" href="./static/css/reset.css" />
+    <link rel="stylesheet" href="./static/css/style.css" />
+    <script src="https://kit.fontawesome.com/ae8734ff0d.js" crossorigin="anonymous"></script>
+    <script defer src="main.js"></script>
+    <title></title>
+  </head>
+  <body>
+    <div class="container">
+        <div class="left-info exo-2-400">
+            <div class="today-info">
+                <h1 class="today-day exo-2-600"></h1>
+                <span class="today-date exo-2-400"></span>
+            </div>
+            <div class="today-weather">
+                <i id="weather-icon" class="fa-solid fa-location-crosshairs"></i>
+                <p class="weather-temp exo-2-400">T°C</p>
+                <p class="weather-main exo-2-400">weather</p>
+            </div>
+        </div>
+
+        <div class="right-info exo-2-400">
+            <div class="day-info">
+                <div>
+                    <span class="exo-2-600">CITY</span>
+                    <span class="value city exo-2-400"></span>
+                </div>
+                <div>
+                    <span class="exo-2-600">PRESSURE</span>
+                    <span class="value pressure exo-2-400"></span>
+                </div>
+                <div>
+                    <span class="exo-2-600">HUMIDITY</span>
+                    <span class="value humidity exo-2-400"></span>
+                </div>
+                <div>
+                    <span class="exo-2-600">WIND SPEED</span>
+                    <span class="value wind-speed exo-2-400"></span>
+                </div>
+                <div>
+                    <span class="exo-2-600">TEMP MIN</span>
+                    <span class="value temp-min exo-2-400"></span>
+                </div>
+                <div>
+                    <span class="exo-2-600">TEMP MAX</span>
+                    <span class="value temp-max exo-2-400"></span>
+                </div>
+            </div>
+
+            <div class="btn-container">
+                <form id="form">
+                    <input class="exo-2-600" id="search" type="text" placeholder="Moscow">
+                    <button type="submit" class="loc-button exo-2-600">Search</button>
+                </form>
+            </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
