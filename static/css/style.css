@@ -1,0 +1,224 @@
+/* Font */
+
+@font-face {
+  font-family: "Exo 2";
+  src: url("../font/Exo2.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.exo-2-200 {
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.exo-2-300 {
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.exo-2-400 {
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.exo-2-500 {
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.exo-2-600 {
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.exo-2-700 {
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.exo-2-800 {
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.exo-2-900 {
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* Variables */
+
+:root {
+  /* Colors */
+  --bg-color: #fefdf8;
+  --text-color: #0e1116;
+  --bg-accent-color: #f0a963;
+  --accent-color-hover: #374a67;
+  --accent-color: #61a1d7;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-size: 1rem;
+}
+
+.container {
+  background-color: var(--bg-color);
+  width: 800px;
+  height: 400px;
+  padding: 25px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+  border-radius: 25px;
+  perspective: 350px;
+  -webkit-perspective: 350px;
+}
+
+.left-info {
+  width: 300px;
+  height: 100%;
+  float: left;
+  display: flex;
+  border-radius: 25px;
+  justify-content: center;
+  background: var(--bg-accent-color);
+  background-position: center;
+  background-size: cover;
+  transform: scale(1.2) perspective(350px);
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+  transition: all ease-in-out 0.4s;
+}
+
+.left-info:hover {
+  transform: scale(1.1);
+}
+
+.today-info {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  gap: 5px;
+}
+
+.today-day{
+  font-size: 2rem;
+}
+
+.today-date{
+  font-size: 1.5rem;
+}
+
+.today-weather {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  bottom: 25px;
+  left: 25px;
+}
+
+.today-weather .fa-solid {
+  font-size: 2rem;
+}
+
+.weather-temp {
+  font-size: 3.2rem;
+}
+
+.right-info {
+  float: right;
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.day-info {
+  padding: 25px;
+  padding-top: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.day-info div:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.day-info div .value {
+  float: right;
+}
+
+.btn-container {
+  padding: 25px 25px 0px 25px;
+}
+
+.loc-button {
+  outline: none;
+  width: 100%;
+  border: none;
+  border-radius: 25px;
+  padding: 20px;
+  background: var(--bg-color);
+  color: var(--text-color);
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+  transition: all ease-in-out 0.4s;
+}
+
+#search {
+  outline: none;
+  width: 100%;
+  border: none;
+  border-radius: 25px;
+  padding: 20px;
+  background: var(--bg-color);
+  color: var(--text-color);
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+  margin-bottom: 18px;
+}
+
+#search::placeholder{
+  color: var(--text-color);
+}
+
+.loc-button:hover {
+  transform: scale(1.1);
+  background: var(--bg-accent-color);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+}
+
+i {
+  color: var(--text-color);
+}
