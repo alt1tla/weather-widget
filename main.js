@@ -93,6 +93,5 @@ form.addEventListener("submit", (e) => {
   const city = searchLocation.value.trim();
   if (city !== "") {
     checkWeather(city);
-    searchLocation.value = "";
   }
 });

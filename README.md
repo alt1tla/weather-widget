@@ -20,3 +20,7 @@ Weather information depending on the entered location.
 ## Visual effects
 
 In addition to the displayed text information, an image corresponding to the weather conditions is also displayed.
+
+## Screenshot
+
+<img src="./static/img/screenshot.jpeg" alt="weather widget interface" />
